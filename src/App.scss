@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+  user-select: none;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  display: flex;
+  font-family: "Inter", sans-serif; 
+  position: relative;
+}
+
+
+@media (max-width: 3000px) {
+  .App {
+    width: 100vw; // Adjust padding for medium screens
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    width: 60vw; // Adjust padding for tablets
+    padding: 0 20vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    width: 80vw; // Adjust padding for small screens/mobiles'
+    padding: 0 10vw;
+  }
+}
+
+button {
+  font-family: "Inter", sans-serif;
+}
