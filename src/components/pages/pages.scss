@@ -1,39 +1,178 @@
+
 .projContainer{
   width: 100%;
+  padding:0;
+  margin:0 margin;
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  height:auto;
   h1 {
+    text-align: center;
+    margin-top: 15vh;
     font-size: 3rem;
     margin: none;
     padding: none;
-  } p {
-    margin: none;
-    padding: none;
+    text-decoration: 3px underline black solid;
   }
-  ul {
+  .projectList {
     list-style:none;
-    padding: 30px;
-    width: calc(100% - 100px);
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     display: flex;
-    gap: 20px;
-    li {
+    gap: 20vh;
+    width: 100%;
+    padding:10vh 0;
+    margin:0;
+    .list {
+      width:80vw;
+      max-width: 700px;
+      padding:0;
+      margin:0;
       text-decoration: none;
-
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      gap:20px;
       img {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         object-fit: contain;
-
         &:hover{
           transform: scale((1.15));
         }
       }
+      .descript {
+        margin: 0;
+        padding:0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        h2 {
+          text-align: center;
+          font-size: 1.8rem; 
+          margin: 0;
+          padding:0;   
+          .highlight {
+            background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-5&color=ffff43);
+            padding: 0 5px;
+          }          
+        }
+        p {
+          margin: 0;
+          padding:0;
+          text-wrap: balance;
+        }
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding:0;
+          margin:0;
+          list-style:none;
+          gap: 8px;
+          li {
+            text-align: center;
+            background-color: rgb(229, 229, 229);
+            border-radius: 15px;
+            padding: 3px 7px;
+            font-size: 0.8rem;
+            font-weight: 500;
+          }
+        }
+        button {
+          background-color: black;
+          color:white;
+          border:none;
+          margin:0;
+          margin-top: 2vh;
+          padding: 5px  10px;
+          font-weight: 600;
+          transition: all ease 0.2s;
+          a {
+            color:white;
+            text-decoration: none;
+          }
+          &:hover {
+            transform: scale(1.05);
+            background-color: grey;
+          }
+          &:disabled {
+            background-color: grey;
+            &:hover {
+              background-color: rgb(217, 40, 40);
+            }
+          }
+        }
+      }
     }
   }
+  .source{
+    a { 
+      font-size: 0.7rem;
+      color:grey;
+    }
+    margin-bottom: 5vh;
+  }
+  .sparkle1{
+    position: absolute;
+    z-index: 0;
+    top: 10vh;
+    right: 10vw;
+    img {
+      width: 50px;    
+      height: 50px;    
+      object-fit: contain;
+      opacity: 0.8;
+    }
+  } 
+}
 
+.sparkle2{
+  position: absolute;
+  z-index: 0;
+  top: 80vh;
+  left: 13vw;
+  img {
+    width: 40px;    
+    height: 40px;    
+    object-fit: contain;
+    opacity: 0.8;
+  }
+}
+
+.sparkle3{
+  position: absolute;
+  z-index: 0;
+  bottom: -35vh;
+  right: 5vw;
+  img {
+    width: 40px;    
+    height: 40px;    
+    object-fit: contain;
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 2000px) {
+  .descript{
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .descript{
+    width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .descript{
+    width: 300px;
+  }
 }

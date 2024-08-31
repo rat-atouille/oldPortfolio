@@ -5,11 +5,10 @@
   display: flex;
   position: relative;
   overflow: hidden;
-
   .main_container {
     margin: auto 0;
     margin-left: 15vw;
-
+    
     .contents {
       text-align: left;
       display: flex;
@@ -18,7 +17,7 @@
       .welcome {
         text-align: left;
         font-weight: 800;
-        font-size: 3rem;
+        font-size: 4rem;
         white-space: nowrap;
         overflow: hidden;
         margin: 0;
@@ -38,6 +37,7 @@
       margin-top: 10px;
       padding: 0;
       cursor: pointer;
+  
       a{
         text-decoration: none;      
         color: rgb(83, 83, 83);
@@ -54,69 +54,6 @@
         opacity: 1;
       }
     }
-  }
-  .choice_container {
-    width: 100%;
-    margin: auto 0;
-    h1 {
-      font-weight: 800;
-      font-size: 2.1rem;
-    }
-    ul {
-      padding: 0;
-      margin: 7vh 0 0 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
-      li {
-        list-style: none;
-        a {
-          text-decoration: none;
-        }
-        .proj {
-          transform: rotate(20deg); 
-        }
-        .edu {
-          transform: rotate(-20deg); 
-        }
-        img {
-          width: 100px;
-          object-fit: contain;
-          height: 100px;
-          &:hover {
-            transform: scale(1.2);
-          }
-        }
-      }  
-    }
-    button {
-      margin-top: 40px;
-      background: black;
-      color:white;
-      border-radius: 3px;
-      border: none;
-      padding: 5px 9px;
-    }
-  }
-  .chess_background {
-    position: absolute;
-    top:0%;
-    left:-200px;
-    z-index: -2;
-    opacity: 0.3;
-    width: 700px;
-    animation: appear 1s;
-  }
-  .knight_background {
-    position: absolute;
-    top:0%;
-    right:-200px;
-    z-index: -2;
-    opacity: 0.3;
-    width: 700px;
-    animation: appear 1s ease-in-out;
   }
 }
 
@@ -148,9 +85,14 @@
 
 .sketch-highlight{
   position:relative;
-  &:hover {
-    border-color:rgb(223, 223, 255);
-  }
+  transition: color 0.3s, transform 0.3s;
+  border-color:rgb(60, 60, 255);
+  background: linear-gradient(to right, rgb(73, 73, 73), rgb(73, 73, 73));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.05);
+    color:black;  
 }
 
 .sketch-highlight:before{
@@ -168,9 +110,6 @@
   transform:rotate(2deg);
   opacity:0.5;
   border-radius:0.25em;
-  &:hover {
-    border-color:rgb(241, 241, 255);
-  }
 }
 
 .sketch-highlight:after{
@@ -189,7 +128,4 @@
   transform:rotate(-1deg);
   opacity:0.5;
   border-radius:0.25em;
-  &:hover {
-    border-color:rgb(222, 222, 255);
-  }
 }

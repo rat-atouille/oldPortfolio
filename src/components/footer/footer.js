@@ -7,8 +7,10 @@ const Footer = () => {
 
   return (
     <div className="footer">
-     <span className='iconContainer'><FaGithub /><MdEmail /></span> 
-      <p> © 2024 Hailey P. All rights reserved.</p>
+     <span className='iconContainer'>
+      <span><a href = "https://github.com/rat-atouille"><FaGithub /></a></span>
+      <MdEmail /></span> 
+      <p> © 2024 Heena P. All rights reserved.</p>
     </div>
   );
 }
