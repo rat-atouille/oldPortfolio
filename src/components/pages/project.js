@@ -1,5 +1,5 @@
-import './pages.scss';
-import React, {useEffect, useState, useLocation} from "react";
+import './project.scss';
+import React, {useLayoutEffect} from "react";
 import brain from "../../assets/bitmap-brain.png";
 import film from "../../assets/bitmap-photographic-film.png";
 import game from "../../assets/bitmap-game-boy.png"
@@ -9,8 +9,6 @@ import Squiggly from '../decors/squiggly'
 
 // projects
 const Projects = () => {
-  const [descri, setDescri] = useState("My Projects");
-  const [hover, setHover] = useState(false);
 
   return (
     <div className="projContainer">
@@ -28,9 +26,7 @@ const Projects = () => {
           <img src={game} alt='North American Word Chain'></img>
           <div className='descript'>
             <h2><span className='highlight'>North America Word Chain</span></h2>
-            <p>An educational game created in a team of five to help you familarize with Canada and U.S.A's geographical locations.
-              Includes features like leader dashboard, progress bar, highscores, and more!
-            </p>
+            <p>This is an educational game developed by a team of five, designed to help users familiarize themselves with the geographical locations of Canada and the U.S.A. The game features a leader dashboard, progress bar, high scores, and more to enhance the learning experience.</p>
             <ul>
               <li>Java</li>
               <li>Java Swing</li>
@@ -45,9 +41,7 @@ const Projects = () => {
         <li className="list" id="film">
           <div className='descript'>
             <h2><span className='highlight'>Cinephile</span></h2>
-            <p>A movie tracking website for movie lovers. 
-              Keep track of the movies you watched or would like to watch and also manage each movie's review!</p>
-            <ul>
+            <p>A movie tracking website tailored for movie enthusiasts. It allows users to keep track of the movies they've watched or want to watch, while also providing the ability to manage and review each movie.</p>            <ul>
               <li>React</li>
               <li>SASS</li>
               <li>Node</li>
@@ -73,8 +67,7 @@ const Projects = () => {
           <img src={brain} alt='Full Stack Web'></img>
           <div className='descript'>
             <h2><span className='highlight'>Oneul</span></h2>
-            <p>Organizer app that will make your school life easier! 
-              You will be able to keep track and organize your school-related acitivites and stay on top of your acaedmic work.</p>
+            <p>This organizer app is designed to make your school life easier. It helps you keep track of and organize all your school-related activities, ensuring you stay on top of your academic work.</p>
             <ul>
               <li>Figma</li>
               <li>Flutter</li>

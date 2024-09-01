@@ -1,15 +1,16 @@
 import './footer.scss';
-import React, {useState, useEffect} from "react";
-import { FaGithub } from "react-icons/fa";
+import React from "react";
 import { MdEmail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
 
   return (
     <div className="footer">
-     <span className='iconContainer'>
-      <span><a href = "https://github.com/rat-atouille"><FaGithub /></a></span>
-      <MdEmail /></span> 
+     <ul className='iconContainer'>
+        <li><a href = "https://www.linkedin.com/in/heenaninap/" target='_blank'><FaLinkedin size={15} /></a></li>
+        <li><MdEmail size={18} />Contact: ninapong777@gmail.com</li>
+      </ul> 
       <p> © 2024 Heena P. All rights reserved.</p>
     </div>
   );

@@ -1,7 +1,6 @@
-import { useEffect, useState, useLocation } from "react";
-import { Link } from "react-router-dom" 
-import React from "react";
+import React, {useLayoutEffect} from "react";
 import './aboutme.scss';
+import { Link } from "react-router-dom" 
 import { FaReact,FaNode,FaJava,FaSass,FaPython,FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript,IoLogoFigma } from "react-icons/io5";
 import { SiPandas } from "react-icons/si";
@@ -14,26 +13,28 @@ import Squiggly from '../decors/squiggly'
 
 // self introuction page
 const About = () => {
-  
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
   return (
     <div className="aboutme">
-      <Star 
-              size={300}
-              color="red"
-              position={{ top: '10vh', right: '0' }}
+        <Star 
+          size={300}
+          color="red"
+          position={{ top: '10vh', right: '0' }}
         />
         <div className="pageOne">
         <div className="descript">
-          <h1>Hello, I'm <span className="highlight">Heena!</span></h1>
+          <h1>Hello, I'm <span className="mark">Heena!</span></h1>
           <p className="notes">
-            Currently studying computer science at University of Western Ontario, I enjoy putting my ideas in my head into softwares to make life more efficient.
-            My main interest is <span className="highlight">full stack development</span>, but I'd like to explore <span className="highlight">machine learning and embedded programming</span> further.
-            Outside of programming, I like to spend my time knitting and crocheting!
+            Currently studying computer science at the University of Western Ontario, I have a passion for transforming the ideas in my head into software that makes life more efficient. 
+            My main interest lies in <span className="highlight">full stack development</span>, but I am also eager to delve deeper into <span className="highlight">machine learning and embedded programming</span>.<br />
+            Outside of programming, I spend my time knitting and crocheting!
           </p>
           <Star 
               size={200}
               color="red"
-              position={{ top: '55vh', left: '0vw', rotate: '180deg' }}
+              position={{ top: '58vh', left: '1%', rotate: '180deg' }}
         />
           </div>
             <Squiggly 
@@ -59,7 +60,7 @@ const About = () => {
         <Star 
               size={150}
               color="red"
-              position={{ top: '7vh', right: '25%', rotate: '180deg' }}
+              position={{ top: '7vh', right: '25%', rotate: '150deg' }}
         />            
           <ul className="lang">
             <li><IoLogoJavascript size={40} /></li>

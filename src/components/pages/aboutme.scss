@@ -23,6 +23,9 @@
         text-align: left;
         font-size: 3rem;
         margin: 10px 0;
+        .mark {
+          text-decoration: solid 2px underline;
+        }
       }
       .notes {
         text-wrap: balance;
@@ -80,7 +83,7 @@
           padding: 10px; 
           transition: background-color ease 0.3s;
           &:hover{
-            background-color: rgb(255, 187, 0);
+            background-color: rgb(255, 199, 46);
           }
         }
       }

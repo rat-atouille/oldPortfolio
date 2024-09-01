@@ -19,7 +19,7 @@
     align-items: center;
     gap: 3vh;
     width: 100%;
-    filter: drop-shadow(0px 0px 3px #a4a4a4);
+    filter: drop-shadow(0px 0px 2px #a4a4a4);
 
     li {
       cursor: pointer;
@@ -43,6 +43,9 @@
         align-items: center;
         justify-content: center;
       }
+    }
+    .active {
+      background-color: rgb(255, 227, 66);
     }
   }
 }

@@ -1,33 +1,39 @@
 .footer {
-  color: grey;
-  font-size: 1rem;
-  width:100%;
-  margin:0;
+  width: 100%;
+  margin: 0;
   padding: 15px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
   z-index: 0;
-  gap: 68%;
-  opacity: 0.5;
-  background-color: rgba(97, 19, 19, 0.3);
+  background-color: white;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  font-weight: 500;
+  color: grey;
   .iconContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    display: flex; 
     gap: 10px;
-  }
-  p {
-    margin:0;
-    padding: 0;
+    list-style: none;
     font-size: 0.6rem;
+    margin: 0; 
+    padding: 0 20px; 
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        text-decoration: none;
+        color: grey;
+      }
+    }
   }
-  span, a {
-    display: flex;
-    margin:0;
-    padding: 0;
-    color:grey;
+
+  p {
+    margin: 0;
+    padding: 0 20px; 
+    font-size: 0.6rem;
   }
 }

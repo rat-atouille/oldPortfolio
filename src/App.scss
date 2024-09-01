@@ -9,7 +9,8 @@
   display: flex;
   font-family: "Inter", sans-serif; 
   position: relative;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   background: repeating-linear-gradient(
       to bottom,
       #ffffff,         

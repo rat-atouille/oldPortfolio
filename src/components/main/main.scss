@@ -28,16 +28,19 @@
       span {
         animation: blink-caret 0.75s step-end infinite;
         font-weight: 600;
-        color: rgb(57, 57, 57);
+        color: rgb(255, 227, 66);
       }
     }
 
     p {
-      display: flex;
       margin-top: 10px;
       padding: 0;
+      width: 150px;
       cursor: pointer;
-  
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(1.05);
+      }  
       a{
         text-decoration: none;      
         color: rgb(83, 83, 83);
@@ -86,13 +89,7 @@
 .sketch-highlight{
   position:relative;
   transition: color 0.3s, transform 0.3s;
-  border-color:rgb(60, 60, 255);
-  background: linear-gradient(to right, rgb(73, 73, 73), rgb(73, 73, 73));
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(1.05);
-    color:black;  
+  transform: scale(1.05);
 }
 
 .sketch-highlight:before{
