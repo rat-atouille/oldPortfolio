@@ -13,7 +13,7 @@ function App() {
   const [sidebar, setsidebar] = useState(true);
 
   return (
-    <Router>
+    <Router basename="/portfolio">
       <ScrollToTop />
       <div className="App">
         {sidebar && <Sidebar sidebar={sidebar} setsidebar={setsidebar} />}

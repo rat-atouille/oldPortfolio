@@ -1,5 +1,5 @@
 import './project.scss';
-import React, {useLayoutEffect} from "react";
+import React from "react";
 import brain from "../../assets/bitmap-brain.png";
 import film from "../../assets/bitmap-photographic-film.png";
 import game from "../../assets/bitmap-game-boy.png"
@@ -26,7 +26,7 @@ const Projects = () => {
           <img src={game} alt='North American Word Chain'></img>
           <div className='descript'>
             <h2><span className='highlight'>North America Word Chain</span></h2>
-            <p>This is an educational game developed by a team of five, designed to help users familiarize themselves with the geographical locations of Canada and the U.S.A. The game features a leader dashboard, progress bar, high scores, and more to enhance the learning experience.</p>
+            <p>An educational game developed by a team of five, designed to help users familiarize themselves with the geographical locations of Canada and the U.S.A. The game features a leader dashboard, progress bar, high scores, and more to enhance the learning experience.</p>
             <ul>
               <li>Java</li>
               <li>Java Swing</li>
@@ -38,7 +38,7 @@ const Projects = () => {
             size={80}
             position={{ top: '65vh', right: '13vw', rotate: '0deg' }}
             /> 
-        <li className="list" id="film">
+        <li className="film" id="film">
           <div className='descript'>
             <h2><span className='highlight'>Cinephile</span></h2>
             <p>A movie tracking website tailored for movie enthusiasts. It allows users to keep track of the movies they've watched or want to watch, while also providing the ability to manage and review each movie.</p>            <ul>
@@ -63,8 +63,8 @@ const Projects = () => {
             color="red"
             position={{ bottom: '-38vh', left: '13vw', rotate: '10deg' }}
             /> 
-        <li className="list" id="film">
-          <img src={brain} alt='Full Stack Web'></img>
+        <li className="list" id="android">
+          <img src={brain} alt='Android app'></img>
           <div className='descript'>
             <h2><span className='highlight'>Oneul</span></h2>
             <p>This organizer app is designed to make your school life easier. It helps you keep track of and organize all your school-related activities, ensuring you stay on top of your academic work.</p>

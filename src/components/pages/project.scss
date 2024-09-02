@@ -2,19 +2,21 @@
 .projContainer{
   width: 100%;
   padding:0;
-  margin:0 margin;
+  margin:0;
   height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   height:auto;
   h1 {
+    z-index: 2;
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 18vh;
     font-size: 3rem;
     margin: none;
     padding: none;
     text-decoration: 3px underline black solid;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
   }
   .projectList {
     list-style:none;
@@ -26,7 +28,8 @@
     width: 100%;
     padding:10vh 0;
     margin:0;
-    .list {
+    .list, .film {
+      z-index: 2;
       width:80vw;
       max-width: 700px;
       padding:0;
@@ -54,19 +57,22 @@
         justify-content: center;
         gap: 15px;
         h2 {
+          z-index: 2;
           text-align: center;
           font-size: 1.8rem; 
           margin: 0;
-          padding:0;   
+          padding:0; 
           .highlight {
             background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-5&color=ffff43);
-            padding: 0 5px;
+            padding: 0;
           }          
         }
         p {
+          z-index: 2;
           margin: 0;
           padding:0;
           text-wrap: balance;
+          text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
         }
         ul {
           display: flex;
@@ -77,6 +83,7 @@
           list-style:none;
           gap: 8px;
           li {
+            z-index: 2;
             text-align: center;
             background-color: rgb(229, 229, 229);
             border-radius: 15px;
@@ -86,6 +93,7 @@
           }
         }
         button {
+          z-index: 2;
           background-color: black;
           color:white;
           border:none;
@@ -159,20 +167,46 @@
   }
 }
 
-@media (max-width: 2000px) {
-  .descript{
-    width: 500px;
+@media (max-width: 600px) {
+  .projContainer {
+    padding: 0 20px;
+    h1 {
+      font-size: 2em;
+    }
+    .projectList {
+      .list, .film {
+        max-width: 250px;
+        gap:15px;
+        flex-wrap: wrap;
+        img {
+          width: 150px;
+          height: 150px;
+          object-fit: contain;
+          &:hover{
+            transform: scale((1.15));
+          }
+        }
+        .descript {
+          gap: 10px;
+          flex-wrap: wrap;
+          h2 {
+            font-size: 1.5rem;
+          }
+          p {
+            font-size: 0.9rem;
+          }
+          ul {
+            flex-wrap: wrap;
+            li {
+              font-size: 0.8rem;
+            }
+          }
+        }  
+      }
+      .film {
+        flex-wrap: wrap-reverse;
+      }
+    }
   }
 }
 
-@media (max-width: 768px) {
-  .descript{
-    width: 400px;
-  }
-}
-
-@media (max-width: 480px) {
-  .descript{
-    width: 300px;
-  }
-}

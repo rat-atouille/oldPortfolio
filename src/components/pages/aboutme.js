@@ -63,23 +63,19 @@ const About = () => {
               position={{ top: '7vh', right: '25%', rotate: '150deg' }}
         />            
           <ul className="lang">
-            <li><IoLogoJavascript size={40} /></li>
-            <li><FaPython size={40} /></li>
-            <li><FaJava size={40} /></li>
-            <li>C</li>
-            <li><BsFiletypeSql size={40} /></li>
-          </ul>
-          <ul className="framework">
-            <li><FaReact size={40} /></li>
-            <li><FaNode size={40} /></li>
-            <li><SiPandas size={40} /></li>
-            <li><RiFlutterFill size={40} /></li>
-            <li><DiMysql size={40} /></li>
-          </ul>
-          <ul className="others">
-            <li><FaBootstrap size={40} /></li>
-            <li><FaSass size={40} /></li>
-            <li><IoLogoFigma size={40} /></li>
+              <li><IoLogoJavascript size={40} /></li>
+              <li><FaPython size={40} /></li>
+              <li><FaJava size={40} /></li>
+              <li>C</li>
+              <li><BsFiletypeSql size={40} /></li>
+              <li><FaReact size={40} /></li>
+              <li><FaNode size={40} /></li>
+              <li><SiPandas size={40} /></li>
+              <li><RiFlutterFill size={40} /></li>
+              <li><DiMysql size={40} /></li>
+              <li><FaBootstrap size={40} /></li>
+              <li><FaSass size={40} /></li>
+              <li><IoLogoFigma size={40} /></li>
           </ul>
           <div className="proj">
             <Link to='/projects'>Go to my projects<span><FaArrowRight /></span></Link>

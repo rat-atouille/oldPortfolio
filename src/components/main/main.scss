@@ -15,9 +15,9 @@
       flex-direction: row;
 
       .welcome {
+        font-size: 3.5rem;
         text-align: left;
         font-weight: 800;
-        font-size: 4rem;
         white-space: nowrap;
         overflow: hidden;
         margin: 0;
@@ -67,21 +67,23 @@
   100% {opacity: 0.3}
 }
 
-@media screen and (max-width:900px) {
-  .contents {
-    max-width: 500px; 
-  }
-}
-@media screen and (max-width: 600px) {
-  .contents {
-    max-width: 400px;
-  }
-}
 @media screen and (max-width: 500px) {
-  .contents {
-    max-width: 300px;
-    .welcome {
-      font-size: 2rem;
+  .container{
+    width: 100%;
+    .main_container {
+      max-width: 300px;
+      .contents {
+        .welcome{
+          font-size: 2em;
+          }
+      }
+      p {
+        width: 150px;
+        display: flex;
+        a {
+          font-size: 0.8rem;
+        }
+      }
     }
   }
 }

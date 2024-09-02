@@ -23,6 +23,8 @@
         text-align: left;
         font-size: 3rem;
         margin: 10px 0;
+        z-index: 2;
+        text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
         .mark {
           text-decoration: solid 2px underline;
         }
@@ -33,9 +35,12 @@
         font-size: 1.1rem;
         font-weight: 500;
         margin: 10px 0;
+        z-index: 2;
+        text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
         .highlight {
           background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-5&color=ffff43);
-          padding: 0 5px;
+          padding: 0px;
+          text-shadow: -1px -1px 0 #ffff43, 1px -1px 0 #ffff43, -1px 1px 0 #ffff43, 1px 1px 0 #ffff43;
         }
       }
    }
@@ -56,21 +61,25 @@
       flex-direction: column;
       height: 70vh;
       h1 {
+        z-index: 2;
+        text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
         text-align: center;
         font-size: 2.5rem;
         margin: 5vh 0;
         padding:0;
         text-decoration: underline solid black 2px;
       } 
-      .lang, .framework, .others{
+      .lang{
         list-style: none;
         text-align: left;
         padding: 5px 10px;
         display: flex;
         gap: 30px;
         align-items: center;
+        flex-wrap: wrap;
+        max-width: 500px;
         li {
-          font-size: 3rem;
+          font-size: 2.3rem;
           font-weight: 700;
           display: flex;
           width: 70px;
@@ -123,5 +132,48 @@
 @keyframes highlight {
   to {
     background-position: 0 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutme {
+    .pageOne {
+      .descript {
+        h1 {
+          font-size: 2rem;
+        }
+        .notes{
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .pageTwo {
+      width: 100%; 
+      .container1 {
+        h1 {
+          font-size: 2rem; 
+        }
+        width: 90%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .lang {
+          max-width: 300px;
+          align-items: center;
+          justify-content: center;
+          li {
+            font-size: 1.5rem;
+            width: 50px;
+            height:50px;
+          }
+        }
+      }
+      .proj {
+        a {
+          font-size: 0.8rem;
+        }
+      }
+    }
   }
 }
