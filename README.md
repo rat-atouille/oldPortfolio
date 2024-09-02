@@ -1,5 +1,5 @@
 # My Portfolio 
-Welcome to my personal portfolio! This web app showcases my projects, skills, and experiences, giving you an insight into my journey as a developer.
+Welcome to my personal portfolio! This web app showcases my projects and skills, giving you an insight into my journey as a developer.
 
 ## Tech Stack
 This portfolio is built using the following technologies:
