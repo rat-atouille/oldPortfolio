@@ -28,7 +28,7 @@
     width: 100%;
     padding:10vh 0;
     margin:0;
-    .list, .film {
+    .game, .film, .android {
       z-index: 2;
       width:80vw;
       max-width: 700px;
@@ -40,13 +40,11 @@
       justify-content: center;
       display: flex;
       gap:20px;
+      
       img {
         width: 200px;
         height: 200px;
         object-fit: contain;
-        &:hover{
-          transform: scale((1.15));
-        }
       }
       .descript {
         margin: 0;
@@ -167,6 +165,25 @@
   }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .android, .game, .film, .pageTwo {
+    animation: scale-a-lil linear both;
+    animation-timeline: view();
+    animation-range: entry 10% contain 10%;
+  }
+}
+
+@keyframes scale-a-lil {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 @media (max-width: 600px) {
   .projContainer {
     padding: 0 20px;
@@ -182,9 +199,6 @@
           width: 150px;
           height: 150px;
           object-fit: contain;
-          &:hover{
-            transform: scale((1.15));
-          }
         }
         .descript {
           gap: 10px;

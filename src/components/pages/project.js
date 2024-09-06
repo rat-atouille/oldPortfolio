@@ -22,7 +22,7 @@ const Projects = () => {
               size={100}
               position={{ top: '20vh', right: '12vw', rotate: '50deg' }}
           />
-        <li className="list" id="game" >
+        <li className="game" id="game" >
           <img src={game} alt='North American Word Chain'></img>
           <div className='descript'>
             <h2><span className='highlight'>North America Word Chain</span></h2>
@@ -63,14 +63,15 @@ const Projects = () => {
             color="red"
             position={{ bottom: '-38vh', left: '13vw', rotate: '10deg' }}
             /> 
-        <li className="list" id="android">
+        <li className="android" id="android">
           <img src={brain} alt='Android app'></img>
           <div className='descript'>
-            <h2><span className='highlight'>Oneul</span></h2>
+            <h2><span className='highlight'>Android App</span></h2>
             <p>This organizer app is designed to make your school life easier. It helps you keep track of and organize all your school-related activities, ensuring you stay on top of your academic work.</p>
             <ul>
               <li>Figma</li>
               <li>Flutter</li>
+              <li>SQLite</li>
               <li>Backend in development..</li>
             </ul>
             <button disabled>Coming soon..</button>

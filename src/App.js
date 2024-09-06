@@ -16,7 +16,7 @@ function App() {
     <Router basename="/portfolio">
       <ScrollToTop />
       <div className="App">
-        {sidebar && <Sidebar sidebar={sidebar} setsidebar={setsidebar} />}
+        <Sidebar sidebar={sidebar} setsidebar={setsidebar} />
         <Routes>
           <Route path="/" element={<Main sidebar={sidebar} setsidebar={setsidebar} />} />
           <Route path="/projects" element={<Pages />} />
