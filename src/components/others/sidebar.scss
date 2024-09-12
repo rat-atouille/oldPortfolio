@@ -3,8 +3,9 @@
   background: transparent;
   z-index: 3;
   position: fixed;
-  top: 20%;
-  margin-left: 15px;
+  top: 0%;
+  right: 0;
+  margin-right: 5vw;
   padding: 5px;
   display: flex;
   justify-content: center;
@@ -14,7 +15,7 @@
     list-style: none;
     font-family: "Inter", sans-serif; 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 3vh;

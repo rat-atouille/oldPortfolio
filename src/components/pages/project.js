@@ -30,6 +30,7 @@ const Projects = () => {
             <ul>
               <li>Java</li>
               <li>Java Swing</li>
+              <li>JUnit</li>
             </ul>
             <button><a href='https://github.com/rat-atouille/North-America-Word-Chain' target='_blank'>Visit</a></button>
           </div>
@@ -40,7 +41,7 @@ const Projects = () => {
             /> 
         <li className="film" id="film">
           <div className='descript'>
-            <h2><span className='highlight'>Cinephile</span></h2>
+            <h2><span className='highlight'>Full Stack Movie Tracker Web</span></h2>
             <p>A movie tracking website tailored for movie enthusiasts. It allows users to keep track of the movies they've watched or want to watch, while also providing the ability to manage and review each movie.</p>            <ul>
               <li>React</li>
               <li>SASS</li>

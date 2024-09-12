@@ -4,7 +4,7 @@ import {Link, useLocation} from 'react-router-dom'
 import { FiGithub } from "react-icons/fi";
 import { FaFolder, FaFolderOpen, FaRegSmile, FaRegSmileWink} from "react-icons/fa";
 import { IoHome, IoHomeOutline } from "react-icons/io5";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 
 // open github in new page
@@ -37,7 +37,7 @@ const Sidebar = ({sidebar, setsidebar}) => {
       </li>,
     ]}
     <li id="shrink" onClick={() => setsidebar(!sidebar)}>
-      {sidebar ? <IoIosArrowUp /> : <IoIosArrowDown />}
+      {sidebar ? <IoIosArrowBack /> : <IoIosArrowForward />}
     </li>
   </ul>
 </div>
