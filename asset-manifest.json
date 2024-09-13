@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.aeabd988.css",
-    "main.js": "/portfolio/static/js/main.6356a664.js",
+    "main.css": "/portfolio/static/css/main.d6bfa94f.css",
+    "main.js": "/portfolio/static/js/main.a1e60cb6.js",
     "static/js/453.83bb04f1.chunk.js": "/portfolio/static/js/453.83bb04f1.chunk.js",
     "static/media/bitmap-game-boy.png": "/portfolio/static/media/bitmap-game-boy.f95e2768744c4143e505.png",
     "static/media/bitmap-brain.png": "/portfolio/static/media/bitmap-brain.680f0cbd3d2403e4ebde.png",
     "static/media/bitmap-photographic-film.png": "/portfolio/static/media/bitmap-photographic-film.3d5d0b7de3235103b5db.png",
     "static/media/sparkle.png": "/portfolio/static/media/sparkle.0c887cb66430b4caac47.png",
     "index.html": "/portfolio/index.html",
-    "main.aeabd988.css.map": "/portfolio/static/css/main.aeabd988.css.map",
-    "main.6356a664.js.map": "/portfolio/static/js/main.6356a664.js.map",
+    "main.d6bfa94f.css.map": "/portfolio/static/css/main.d6bfa94f.css.map",
+    "main.a1e60cb6.js.map": "/portfolio/static/js/main.a1e60cb6.js.map",
     "453.83bb04f1.chunk.js.map": "/portfolio/static/js/453.83bb04f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aeabd988.css",
-    "static/js/main.6356a664.js"
+    "static/css/main.d6bfa94f.css",
+    "static/js/main.a1e60cb6.js"
   ]
 }
