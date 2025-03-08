@@ -41,7 +41,7 @@ const Projects = () => {
             /> 
         <li className="film" id="film">
           <div className='descript'>
-            <h2><span className='highlight'>Full Stack Movie Tracker Web</span></h2>
+            <h2><span className='highlight'>Cinephile - Full Stack Movie Tracker Web</span></h2>
             <p>A movie tracking website tailored for movie enthusiasts. It allows users to keep track of the movies they've watched or want to watch, while also providing the ability to manage and review each movie.</p>            <ul>
               <li>React</li>
               <li>SASS</li>
@@ -64,18 +64,20 @@ const Projects = () => {
             color="red"
             position={{ bottom: '-38vh', left: '13vw', rotate: '10deg' }}
             /> 
-        <li className="android" id="android">
-          <img src={brain} alt='Android app'></img>
+        <li className="paintTool" id="paintTool">
+          <img src={brain} alt='paintTool'></img>
           <div className='descript'>
-            <h2><span className='highlight'>Android App</span></h2>
-            <p>This organizer app is designed to make your school life easier. It helps you keep track of and organize all your school-related activities, ensuring you stay on top of your academic work.</p>
+            <h2><span className='highlight'>Paint Tool</span></h2>
+            <p>Allows users to create digital art with a variety of tools, including brush pens, colors, erasers, and canvas layers. Users can create, modify, and manage layers, save and load projects, and export their creations as PNG or JPEG files.</p>
             <ul>
-              <li>Figma</li>
-              <li>Flutter</li>
-              <li>SQLite</li>
-              <li>Backend in development..</li>
+              <li>C++</li>
+              <li>Qt</li>
             </ul>
-            <button disabled>Coming soon..</button>
+            <button>
+              <a href='https://github.com/rat-atouille/Paint-Tool'  target='_blank'>
+                Visit
+                </a>
+            </button>
           </div>
         </li>
       </ul>
